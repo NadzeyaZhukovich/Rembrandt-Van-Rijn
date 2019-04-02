@@ -146,10 +146,26 @@
     }
 }
 
-
 /* --------  s5_prints --------  */
 
+.my-thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.my-thumbs img{
+    display: block;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.my-thumbs .my-bk-image{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
 /* --------  s6_paintings --------  */
+
 .paintings-1{
     background: url("img/paintings-img/1920px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg"); 
     background-position: center;
