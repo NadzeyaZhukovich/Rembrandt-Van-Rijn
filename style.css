@@ -277,6 +277,7 @@
     grid-template: 
             "content-copy contact-map contact-map"
             "contact-picture contact-map contact-map"
+    ;
 }
 
 @media (max-width: 768px){
@@ -287,6 +288,7 @@
             "contact-picture content-copy"
             "contact-map contact-map"
             "contact-map contact-map"
+        ;
     }
     .contact-picture{
         justify-self: end;
@@ -302,6 +304,7 @@
             "content-copy"
             "contact-map"
             "contact-map"
+        ;
     }
 
     .contact-picture{
@@ -314,7 +317,75 @@
     }
 }
 
-
 /* --------  s9_footer --------  */
+
+.s9_footer_grid{
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+            "footer_hours"
+            "footer_menu"
+            "footer_museum"
+            "footer_painting_names"
+            "footer_links"
+            "footer_img"
+    ;
+}
+
+.footer_museum h1{
+    text-align: center;
+}
+
+.footer_museum, .footer_links{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.footer_img{
+    width: 50%;
+    justify-self: flex-start;
+}
+
+.footer_hours{
+    text-align: center;
+}
+
+@media(max-width: 767px){
+    .footer_menu, .footer_museum, .footer_painting_names, .footer_links{
+       border-top: 1px dashed black;
+       padding-top: 10px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center; 
+    }
+
+    .footer_img{
+        transform: scaleX(-1);
+    }
+
+    .footer_hours{ text-align: center; }
+}
+
+@media (min-width: 768px){
+    .s9_footer_grid{
+        font-size: initial;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "footer_hours footer_img"
+                "footer_museum footer_menu"
+                "footer_links footer_painting_names"
+        ;
+    }
+
+    .footer_museum, .footer_links, .footer_links h1{
+        flex: none;
+        padding-top: 0;
+        text-align: left;
+    }
+}
 
 /* --------  s10_copyright --------  */
