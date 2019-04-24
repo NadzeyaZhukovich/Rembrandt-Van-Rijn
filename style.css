@@ -199,6 +199,12 @@
     outline: none;
 }
 
+@media (max-wight: 576px){
+    .windmill{
+        display: none;
+    }
+}
+
 .paintings-1{
     background: url("img/paintings-img/1920px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg"); 
     background-position: center;
