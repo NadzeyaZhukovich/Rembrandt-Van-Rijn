@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,6 +15,28 @@
     <title>La Galerie d'art de Rembrand</title>
   </head>
   <body id="top" class="bg-dark">
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="#top">La Galerie d'art de Rembrand</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-items"><a href="#s2_trio" class="nav-link">Works</a></li>
+                    <li class="nav-items"><a href="#s3_painting_of_the_week" class="nav-link">Highlighted Painting</a></li>
+                    <li class="nav-items"><a href="#s4_about" class="nav-link">About</a></li>
+                    <li class="nav-items"><a href="#s5_prints" class="nav-link">Prints</a></li>
+                    <li class="nav-items"><a href="#s6_paintings" class="nav-link">Paintings</a></li>
+                    <li class="nav-items"><a href="#s7_drawings" class="nav-link">Drawings</a></li>
+                    <li class="nav-items"><a href="#s8_contact" class="nav-link">Contact</a></li>
+                    <li class="nav-items"><a href="#s09_footer" class="nav-link">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section id="s1_header">
         <aside class="container">
             <h1 class="text-danger display-4">Rembrandt Van Rijn</h1>
@@ -22,9 +44,9 @@
         </aside>
     </section>
     <section id="s2_trio">
-        <div class="container py-5">
+        <div class="container py-5 myGrid">
             <div class="card mx-2">
-                <div class="card-body">
+                <div class="card-body mySubGrid">
                     <img class="img-fluid border border-dark" src="img/interface-imgs/s2-prints.png" alt="Prints">
                     <aside>
                         <h2 class="text-danger my-2">Prints</h2>
@@ -37,7 +59,7 @@
             </div>
 
             <div class="card mx-2">
-                <div class="card-body">
+                <div class="card-body mySubGrid">
                     <img class="img-fluid  border border-dark" src="img/interface-imgs/s2-paintings.png" alt="Paintings">
                     <aside>
                         <h2 class="text-danger my-2">Paintings</h2>
@@ -50,7 +72,7 @@
             </div>
 
             <div class="card mx-2">
-                <div class="card-body">
+                <div class="card-body mySubGrid">
                     <img class="img-fluid  border border-dark" src="img/interface-imgs/s2-drawings.png" alt="Drawings">
                     <aside>
                         <h2 class="text-danger my-2">Drawings</h2>
@@ -66,88 +88,103 @@
     <section class="text-center py-5" id="s3_painting_of_the_week">
         <div class="container p-4">
             <h1 class="text-danger">Highlighted Painting</h1>
-            <img class="img-fluid my-3 border border-light" src="img/s3-painting-of-the-week-Rembrandt_castello_sulla_riva_1640-1650.png" alt="Painting of the week">
+            <img class="img-fluid my-3 border border-light" style="border-width: 3px!important;" src="img/s3-painting-of-the-week-Rembrandt_castello_sulla_riva_1640-1650.png" alt="Painting of the week">
             <p class="text-white">Castle Overlooking a River (circa 1645)</p>
         </div>
     </section>
     <section class="py-5" id="s4_about">
-        <div class="container">
-            <img class="img-fluid" src="img/interface-imgs/s4-about-Rembrandt_Self-Portrait_(1637).png" alt="Rembrandt">
-            <h3 class="text-danger" >About</h3>
-            <p>
-                <strong> Rembrandt van Rijn </strong> was a Dutch painter and etcher.
-                He is generally considered one of the greatest painters and printmakers
-                in European artand the most important in Dutch history.
-                His contributions to art came in a period of great wealth and cultural achievement
-                that historians call the Dutch Golden Age when Dutch Golden Age painting,
-                although in many ways antithetical to the Baroque style that dominated Europe,
-                was extremely prolific and innovative,
-                and gave rise to important new genres in painting.
-            </p>
+        <div class="container py-5 s4_about_grid">
+            <div class="img-selfportrait">
+                <img class="img-fluid" src="img/interface-imgs/s4-about-Rembrandt_Self-Portrait_(1637).png" alt="Rembrandt">
+            </div>
+            <div class="hd-about">
+                <h1 class="text-danger" >About</h1>
+            </div>
+            <div class="text-about">
+                <p>
+                    <strong> Rembrandt van Rijn </strong> was a Dutch painter and etcher.
+                    He is generally considered one of the greatest painters and printmakers
+                    in European artand the most important in Dutch history.
+                    His contributions to art came in a period of great wealth and cultural achievement
+                    that historians call the Dutch Golden Age when Dutch Golden Age painting,
+                    although in many ways antithetical to the Baroque style that dominated Europe,
+                    was extremely prolific and innovative,
+                    and gave rise to important new genres in painting.
+                </p>
+            </div>
         </div>
     </section>
     <section class="py-5" id="s5_prints">
         <div class="container py-5">
             <h1 class="text-danger">Prints</h1>
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/A-Stout-Man-in-a-Large-Cloak_circa-1628-thumb.jpg" alt="A Stout Man in a Large Cloak circa 1628 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Bald-headed-Old-Man_1630-thumb.jpg" alt="Bald headed Old Man 1630 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Bearded-Old-Man-with-a-High-Forehead_circa-1630-thumb.jpg" alt="Bearded Old Man with a High Forehead circa 1630 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Beggar-Man-and-Beggar-Woman-Conversing-thumb.jpg" alt="Beggar Man and Beggar Woman Conversingthumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Bust-of-an-Old-Bearded-Man_1631-thumb.jpg" alt="Bust of an Old Bearded Man 1631 thum">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Jerome-Reading-in-the-Wilderness_1634-thumb.jpg" alt="Jerome-Reading in the Wilderness 1634 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Josephs-Coat-Brought-to-Jacob_circa-1633-thumb.jpg" alt="Josephs Coat Brought to Jacob circa 1633 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Old-Man-with-a-Snub-Nose_circa-1629-thumb.jpg" alt="Old Man with a Snub Nose circa 1629 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Old-Woman-Seated-in-a-Cottage-with-a-String-of-Onions-on-the-Wall_1631-thumb.jpg" alt="Old Woman Seated in a Cottage with a String of Onions on the Wall 1631 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Rembrandt_van_Rijn_-_The_Quacksalver_1635-thumb.jpg" alt="Rembrandt van Rijn - The Quacksalver 1635 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Self-portrait-in-a-Cap,-Laughing-_1630-thumb.jpg" alt="Self portrait in a Cap, Laughing 1630 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Self-portrait-Leaning-Forward_circa-1628-thumb.jpg" alt="Self portrait Leaning Forward circa 1628 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/Sheet-of-studies-of-mens-heads_-circa-1630-1631-thumb.jpg" alt="Sheet of studies of mens heads circa 1630-1631 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Artists-Mother--Head-and-Bust-Three-quarters-Right_1628-thumb.jpg" alt="The Artists Mother Head and Bust Three quarters Right 1628 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Blindness-of-Tobit-a-Sketch_circa-1629-thumb.jpg" alt="The Blindness of Tobit a Sketch circa 1629 thumb">
-            <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Small-Lion-Hunt-with-Two-Lions_-circa-1632-thumb.jpg" alt="The Small Lion Hunt with Two Lions circa 1632 thumb">
-            <img class="img-fluid"  src="img/interface-imgs/s5-prints.png" alt="Interface imgs">
+            <div class="my-thumbs">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/A-Stout-Man-in-a-Large-Cloak_circa-1628-thumb.jpg" alt="A Stout Man in a Large Cloak circa 1628 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Bald-headed-Old-Man_1630-thumb.jpg" alt="Bald headed Old Man 1630 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Bearded-Old-Man-with-a-High-Forehead_circa-1630-thumb.jpg" alt="Bearded Old Man with a High Forehead circa 1630 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Beggar-Man-and-Beggar-Woman-Conversing-thumb.jpg" alt="Beggar Man and Beggar Woman Conversingthumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Bust-of-an-Old-Bearded-Man_1631-thumb.jpg" alt="Bust of an Old Bearded Man 1631 thum">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Jerome-Reading-in-the-Wilderness_1634-thumb.jpg" alt="Jerome-Reading in the Wilderness 1634 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Josephs-Coat-Brought-to-Jacob_circa-1633-thumb.jpg" alt="Josephs Coat Brought to Jacob circa 1633 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Old-Man-with-a-Snub-Nose_circa-1629-thumb.jpg" alt="Old Man with a Snub Nose circa 1629 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Old-Woman-Seated-in-a-Cottage-with-a-String-of-Onions-on-the-Wall_1631-thumb.jpg" alt="Old Woman Seated in a Cottage with a String of Onions on the Wall 1631 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Rembrandt_van_Rijn_-_The_Quacksalver_1635-thumb.jpg" alt="Rembrandt van Rijn - The Quacksalver 1635 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Self-portrait-in-a-Cap,-Laughing-_1630-thumb.jpg" alt="Self portrait in a Cap, Laughing 1630 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Self-portrait-Leaning-Forward_circa-1628-thumb.jpg" alt="Self portrait Leaning Forward circa 1628 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/Sheet-of-studies-of-mens-heads_-circa-1630-1631-thumb.jpg" alt="Sheet of studies of mens heads circa 1630-1631 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Artists-Mother--Head-and-Bust-Three-quarters-Right_1628-thumb.jpg" alt="The Artists Mother Head and Bust Three quarters Right 1628 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Blindness-of-Tobit-a-Sketch_circa-1629-thumb.jpg" alt="The Blindness of Tobit a Sketch circa 1629 thumb">
+                <img class="img-fluid" src="img/prints-img/prints-thumbs/The-Small-Lion-Hunt-with-Two-Lions_-circa-1632-thumb.jpg" alt="The Small Lion Hunt with Two Lions circa 1632 thumb">
+                <img class="img-fluid my-bk-image"  src="img/interface-imgs/s5-prints.png" alt="Interface imgs">
+            </div>
         </div>
     </section>
     <section class="py-5" id="s6_paintings">
         <div class="container py-5">
             <h1 class="text-danger">Paintings</h1>
-            <div class="paintings-1"></div>
-            <div class="paintings-2"></div>
-            <div class="paintings-3"></div>
-            <div class="paintings-4"></div>
-            <div class="paintings-5"></div>
-            <div class="paintings-6"></div>
-            <div class="paintings-7"></div>
-            <div class="paintings-8"></div>
-            <div class="paintings-9"></div>
-            <div class="paintings-10"></div>
+            <aside class="my-cursor">
+                <div class="my-paintings-container my-paintings-area">
+                    <div class="paintings-1" data-toggle="modal" data-target="#painting1"></div>
+                    <div class="paintings-2" data-toggle="modal" data-target="#painting2"></div>
+                    <div class="paintings-3" data-toggle="modal" data-target="#painting3"></div>
+                    <div class="paintings-4" data-toggle="modal" data-target="#painting4"></div>
+                    <div class="paintings-5" data-toggle="modal" data-target="#painting5"></div>
+                    <div class="paintings-6" data-toggle="modal" data-target="#painting6"></div>
+                    <div class="paintings-7" data-toggle="modal" data-target="#painting7"></div>
+                    <div class="paintings-8" data-toggle="modal" data-target="#painting8"></div>
+                    <div class="paintings-9" data-toggle="modal" data-target="#painting9"></div>
+                    <div class="paintings-10" data-toggle="modal" data-target="#painting10"></div>
+                </div>
+               <img class="img-fluid windmill" src="img/interface-imgs/s6-painting-200.png" alt="Windmill"> 
+            </aside>
         </div>
     </section>
     <section class="py-5" id="s7_drawings">
         <div class="container py-5">
             <h1 class="text-danger">Drawings</h1>
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/a-young-woman-having-her-hair-braided_circa-1637-thumb.jpg" alt="a young woman having her hair braided">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/an-elephant-thumb.jpg" alt="an elephant">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/blind-man-walking-with-a-stick-thumb.jpg" alt="blind man walking with a stick">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/dutch-farmhouse-in-sunlight_circa-1635-1636-thumb.jpg" alt="dutch farmhouse in sunlight">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/group-of-horsemen_circa-1632-thumb.jpg" alt="group of horsemen">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/lady-with-a-fan-thumb.jpg" alt="lady with a fan">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/landscape-with-two-cottages_circa-1633-thumb.jpg" alt="landscape with two cottages">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/man-leaning-on-a-stick-facing-right_circa-1629-1630-thumb.jpg" alt="man leaning on a stick facing right">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/old-man-seated-in-an-armchair_1631-thumb.jpg" alt="old man seated in an armchair">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/portrait-of-harmen-gerritsz-van-rijn_1630-thumb.jpg" alt="portrait of harmen gerritsz van rijn">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/saskia-at-a-window_circa-1634-1635-thumb.jpg" alt="saskia at a window">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/seated-old-man_circa-1630--thumb.jpg" alt="seated old man">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/study-of-a-girl-sleeping-thumb.jpg" alt="study of a girl sleeping">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/susanna-and-the-elders_circa-1630-1633-thumb.jpg" alt="susanna and the elders">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/the-entombment_1630-thumb.jpg" alt="the entombment">
-            <img class="img-fluid" src="img/drawings-img/drawings-thumbs/woman-carrying-a-child-downstairs_circa-1636-thumb.jpg" alt="woman carrying a child downstairs">
-            <img class="img-fluid" src="img/interface-imgs/s7-drawing.png" alt="Interface imgs">
+            <div class="my-thumbs">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/a-young-woman-having-her-hair-braided_circa-1637-thumb.jpg" alt="a young woman having her hair braided">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/an-elephant-thumb.jpg" alt="an elephant">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/blind-man-walking-with-a-stick-thumb.jpg" alt="blind man walking with a stick">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/dutch-farmhouse-in-sunlight_circa-1635-1636-thumb.jpg" alt="dutch farmhouse in sunlight">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/group-of-horsemen_circa-1632-thumb.jpg" alt="group of horsemen">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/lady-with-a-fan-thumb.jpg" alt="lady with a fan">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/landscape-with-two-cottages_circa-1633-thumb.jpg" alt="landscape with two cottages">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/man-leaning-on-a-stick-facing-right_circa-1629-1630-thumb.jpg" alt="man leaning on a stick facing right">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/old-man-seated-in-an-armchair_1631-thumb.jpg" alt="old man seated in an armchair">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/portrait-of-harmen-gerritsz-van-rijn_1630-thumb.jpg" alt="portrait of harmen gerritsz van rijn">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/saskia-at-a-window_circa-1634-1635-thumb.jpg" alt="saskia at a window">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/seated-old-man_circa-1630--thumb.jpg" alt="seated old man">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/study-of-a-girl-sleeping-thumb.jpg" alt="study of a girl sleeping">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/susanna-and-the-elders_circa-1630-1633-thumb.jpg" alt="susanna and the elders">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/the-entombment_1630-thumb.jpg" alt="the entombment">
+                <img class="img-fluid" src="img/drawings-img/drawings-thumbs/woman-carrying-a-child-downstairs_circa-1636-thumb.jpg" alt="woman carrying a child downstairs">
+                <img class="img-fluid my-bk-image" src="img/interface-imgs/s7-drawing.png" alt="Interface imgs">
+            </div>
         </div>
     </section>
     <section class="py-5" id="s8_contact">
-        <div class="container py-5">
-            <aside>
+        <div class="container py-5 contacts_grid">
+            <aside class="content-copy">
                 <h1 class="text-danger">Contacts</h1>
                 <p>
                     La Galerie d'art de Rembrandt<br>
@@ -157,28 +194,32 @@
                     loremipsum@email.com
                 </p>
             </aside>
-            <p>
+            <p class="contact-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12092399.719946038!2d-108.9313613973186!3d42.273271331500304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fee11014e82f%3A0x1c5e3fda11f60198!2sPluralsight!5e0!3m2!1sen!2sus!4v1537034361031" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> 
             </p>
-            <img class="img-fluid" src="img/interface-imgs/s8-contact.png" alt="Interface imgs">
+            <img class="img-fluid contact-picture" src="img/interface-imgs/s8-contact.png" alt="Interface imgs">
         </div>
     </section>
     <section class="text-white py-5" id="s09_footer">
-        <div class="container py-5">
-            <aside>
-                <h1 class="text-danger h3">La Galerie d'art de Rembrandt</h1>
+        <div class="container py-5 s9_footer_grid">
+            <aside class="footer_hours py-5" style="grid-area: footer_hours;">
+                <h1 class="text-danger h5">La Galerie d'art de Rembrandt</h1>
                 <p>
                     Tuesday - Friday: 10:00 am - 5:00 pm<br>
                     Saturday: 10:00 am - 3:00 pm<br>
                     Closed Sundays and Mondays<br>
                 </p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+                <div class="btn-toolbar" role="toolbar" aria-label="Social Media Buttons">
+                    <div class="btn-group m-2 btn-group-sm">
+                        <button type="button" class="btn btn-info"><i class="fab fa-facebook"></i></button>
+                        <button type="button" class="btn btn-info"><i class="fab fa-linkedin"></i></button>
+                        <button type="button" class="btn btn-info"><i class="fab fa-twitter"></i></button>
+                        <button type="button" class="btn btn-info"><i class="fab fa-instagram"></i></button>
+                    </div>
+                </div>
             </aside>
-            <aside>
-                <h1 class="text-danger h3">Menu</h1>
+            <aside class="footer_menu">
+                <h1 class="text-danger h5">Menu</h1>
                 <ul class="list-unstyled">
                     <li>Home</li>
                     <li>Paintings, Drawings and Prints</li>
@@ -190,8 +231,8 @@
                     <li>Contacts</li>
                 </ul>
             </aside>
-            <aside>
-                <h1 class="text-danger h3">Some Museums Showing Rembrandts</h1>
+            <aside class="footer_museum">
+                <h1 class="text-danger h5">Some Museums Showing Rembrandts</h1>
                 <ul class="list-unstyled">
                     <li>Hermitage Museum</li>
                     <li>Louvre</li>
@@ -205,8 +246,8 @@
                     <li>The Metropolitan Museum of Art</li>
                 </ul>
             </aside>
-            <aside>
-                <h1 class="text-danger h3">Painting names</h1>
+            <aside class="footer_painting_names">
+                <h1 class="text-danger h5">Painting names</h1>
                 <ul class="list-unstyled">
                     <li>Self Portrait As A Young Man</li>
                     <li>Portrait Of Jan Six</li>
@@ -220,8 +261,8 @@
                     <li>The Naughty Child</li>
                 </ul>
             </aside>
-            <aside>
-                <h1 class="text-danger h3">Other links</h1>
+            <aside class="footer_links">
+                <h1 class="text-danger h5">Other links</h1>
                 <ul class="list-unstyled">
                     <li>Complete Self Portraits</li>
                     <li>Selected Self Portraits</li>
@@ -233,7 +274,7 @@
                     <li>About the Etchings</li>
                 </ul>
             </aside>
-            <aside><img class="img-fluid" src="img/interface-imgs/s9-footer-drawing.jpg" alt="Interface imgs"></aside>
+            <aside class="footer_img"><img class="img-fluid" src="img/interface-imgs/s9-footer-drawing.jpg" alt="Interface imgs"></aside>
         </div>
     </section>
     <section class="text-white bg-dark small my-5 text-center" id="s10_copyright">
@@ -246,8 +287,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('a[href^="#"]').on('click',function (e) {e.preventDefault();
@@ -263,5 +305,165 @@
             });
         });
     </script>
+
+    <!-- --------------------  PAINTING-1  ------------------------>
+    <div class="modal fade" id="painting1" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/1920px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg" alt="Rembrandt Painting 1" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-2  ------------------------>
+    <div class="modal fade" id="painting2" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 2" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/1920px-Rembrandt_-_Rembrandt_and_Saskia_in_the_Scene_of_the_Prodigal_Son_-_Google_Art_Project.jpg" alt="Rembrandt Painting 2" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-3  ------------------------>
+    <div class="modal fade" id="painting3" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 3" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/1920px-Rembrandt_van_Rijn_-_Portrait_of_Willem_Burchgraeff_-_O_854_-_Slovak_National_Gallery.jpg" alt="Rembrandt Painting 3" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-4  ------------------------>
+    <div class="modal fade" id="painting4" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 4" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/1920px-Rembrandt_van_Rijn_198.jpg" alt="Rembrandt Painting 4" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-5  ------------------------>
+    <div class="modal fade" id="painting5" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 5" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/2560px-Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg" alt="Rembrandt Painting 5" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-6  ------------------------>
+    <div class="modal fade" id="painting6" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 6" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/2560px-Rembrandt_Harmensz._van_Rijn_-_Zelfportret_op_jeugdige_leeftijd_-_Google_Art_Project.jpg" alt="Rembrandt Painting 6" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-7  ------------------------>
+    <div class="modal fade" id="painting7" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 7" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/2880px-Rembrandt_The_Artist_in_his_studio.jpg" alt="Rembrandt Painting 7" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-8  ------------------------>
+    <div class="modal fade" id="painting8" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 8" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/Rembrandt_-_Portrait_of_a_Woman_with_Gloves_-_NGI.808.jpg" alt="Rembrandt Painting 8" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-9  ------------------------>
+    <div class="modal fade" id="painting9" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 9" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/Rembrandt_van_Rijn_197.jpg" alt="Rembrandt Painting 9" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------  PAINTING-10  ------------------------>
+    <div class="modal fade" id="painting10" tabindex="-1" role="dialog" aria-labelledby="Rembrandt Painting 10" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paintings-img/Rembrandt-SMELL.jpg" alt="Rembrandt Painting 10" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
